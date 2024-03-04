@@ -26,12 +26,15 @@ public class HelloController{
     public void test(MouseEvent event){
         Set<LocalDate> projectDueDates = new HashSet<>();
         projectDueDates.add(LocalDate.now().plusDays(1)); // Ejemplo: entrega mañana
+
+
+
         System.out.println(calendar.getValue());
         // Personaliza las celdas del calendario
 
     }
     public void cargarData(){
-        Locale.setDefault(new Locale("en", "US"));
+
         String cssFile = getClass().getResource("/styles.css").toExternalForm();
         calendar.getStylesheets().add(cssFile);
         calendar.setDayCellFactory(new Callback<Calendar, DateCell>() {
@@ -42,15 +45,15 @@ public class HelloController{
                     public void updateItem(LocalDate item, boolean empty) {
                         super.updateItem(item, empty);
                         // Marca la fecha de mañana de rojo
-                        if (item.equals(LocalDate.now().plusDays(1))) {
+                        if (item.equals(LocalDate.now().plusDays(60))) {
                             System.out.println("adios");
-                            this.setStyle("-fx-background-color: #FF6347;"); // Tomate Rojo
+                            this.setStyle("-fx-background-color: #C1402E;"); // Tomate Rojo
                         }
                     }
                 };
             }
         });
-
+        /*
         String cssPart1 = ".calendar-grid {\n" +
                 "    -fx-background-color: #1F1F1F;\n" +
                 "    -fx-padding: 10;\n" +
@@ -199,5 +202,7 @@ public class HelloController{
                 "    -fx-padding: 5 0 0 0;\n" + // Asumiendo un valor de 5px para el margen superior ($chrono-label-margin)
                 "    -fx-text-fill: #333333;\n" + // Asumiendo un color gris oscuro para el texto
                 "}";
+
+         */
     }
 }

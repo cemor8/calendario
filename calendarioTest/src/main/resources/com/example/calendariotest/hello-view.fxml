@@ -3,8 +3,8 @@
 <?import atlantafx.base.controls.Calendar?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="770.0" stylesheets="@../../../styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calendariotest.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="908.0" prefWidth="1198.0" stylesheets="@../../../styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calendariotest.HelloController">
    <children>
-      <Calendar fx:id="calendar" layoutX="178.0" layoutY="44.0" onMouseClicked="#test" prefHeight="484.0" prefWidth="414.0" stylesheets="@../../../styles.css" />
+      <Calendar fx:id="calendar" layoutX="645.0" layoutY="175.0" onMouseClicked="#test" prefHeight="450.0" prefWidth="488.0" stylesheets="@../../../styles.css" />
    </children>
 </AnchorPane>
